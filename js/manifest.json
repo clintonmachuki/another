@@ -19,6 +19,9 @@
   ],
     "background": {
       "service_worker": "background.js"
-    }
+    },
+    "host_permissions": [
+      "https://cdn.withpersona.com/*",
+      "https://cdn.jsdelivr.net/*"
+    ]
   }
-  
