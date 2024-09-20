@@ -1,0 +1,24 @@
+{
+    "manifest_version": 2,
+    "name": "jsblock",
+    "version": "1.0",
+    "permissions": [
+    "tabs",
+    "activeTab",
+    "windows",
+    "management",
+    "notifications",
+    "management",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "<all_urls>",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess",
+    "declarativeNetRequestFeedback"
+  ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
