@@ -1,0 +1,223 @@
+GET /verify?code=us1-ps53fnr&device-handoff-method=qr HTTP/1.1
+Host: verifications.withpersona.com
+Cookie: _iidt=byfQJQ/0W1v9ssG0rC+nfgteIfQ7nUx9HvHXZQ4oKN7MYAU1KiS4RE6WP9II7BJ84/Gbx4Fc9TocZmSF1mwsZ+B0gk3AkG/FDA==; _vid_t=gdjbGlQftKJAjIDC09nPpBiLWH3ytUbUkQ7eGf/phvOw9eRc8dYXqSJNG5iGCDrYHtzFDns8Uf3rDMugr53Nb5qodkNpO6YKKw==
+Sec-Ch-Ua: "Chromium";v="122", "Not(A:Brand";v="24", "Samsung Internet";v="26.0"
+Sec-Ch-Ua-Mobile: ?1
+Sec-Ch-Ua-Full-Version: "122.0.6261.120"
+Sec-Ch-Ua-Platform: "Android"
+Sec-Ch-Ua-Platform-Version: "14.0.0"
+Sec-Ch-Ua-Model: "SM-A135F"
+Sec-Ch-Ua-Full-Version-List: "Chromium";v="122.0.6261.120", "Not(A:Brand";v="24.0.0.0", "Samsung Internet";v="26.0.3.7"
+Accept-Language: en-GB,en,en-US,en
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Mobile Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate, br
+Connection: close
+
+eliminate
+Sec-Fetch-User: ?1
+Priority: u=0, i
+
+POST /api/internal/verify/v1/inquiry-sessions/exchange-one-time-link-code HTTP/2
+Host: verifications.withpersona.com
+Cookie: persona_device_id=dev_TfQYEMPkCn59qUTQywy9CQD7UPgg; _iidt=byfQJQ/0W1v9ssG0rC+nfgteIfQ7nUx9HvHXZQ4oKN7MYAU1KiS4RE6WP9II7BJ84/Gbx4Fc9TocZmSF1mwsZ+B0gk3AkG/FDA==; _vid_t=gdjbGlQftKJAjIDC09nPpBiLWH3ytUbUkQ7eGf/phvOw9eRc8dYXqSJNG5iGCDrYHtzFDns8Uf3rDMugr53Nb5qodkNpO6YKKw==; _persona_web_session=Ds8UkjR%2Bt7%2BLAudGjF8nfXkGoXzEJiWkjxT74n%2FGo%2F6d3RtT08osH9C89jQ8hfn3AAW8n6EFGGetZ9UclQMvTZ5U967g%2FK1GxE0vDdYB%2FLebqWC2DsG7M%2BqmUepm7KUCJMSIAAkiI40K0foX2%2Bj8NHkYjmE3sNnKX460BaG64%2FvQWN%2BksKzX%2BwRI7g8sSleTWgo2ZOajtE%2F7lCw5hv23ofQy17shr2DHMUR7Ega9D7xJ1aWNcTymcgnAceVF0u46dOkeeiLRcqkmkKQfRqwL5Gc%2FFTgVtsnoWUr3%2Fg%3D%3D--cmiCT0fYaSZn4ehD--BxO2wbEO2BJMdgNusF53ew%3D%3D; __cf_bm=jR40poeTLNxBKyc.zel9SR64Qm8cB0rmiBT0D.Bg1Wc-1726848051-1.0.1.1-DEa9tLTs2JhK.vbRYDOfg_8EIRPW5daDiJhtRWK7UyMmw1YAIAwvh0R7fdYMAWB9r2kuNS7Zo_SVFjPCN2Y9jw
+Content-Length: 123
+Persona-Device-Locale: en-US
+Sec-Ch-Ua: "Chromium";v="122", "Not(A:Brand";v="24", "Samsung Internet";v="26.0"
+Persona-Server-Sha: 13fb53b8b01
+Persona-Style-Variant: base
+Sec-Ch-Ua-Mobile: ?1
+User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Mobile Safari/537.36
+Content-Type: application/json
+Sec-Ch-Ua-Full-Version: "122.0.6261.120"
+Accept: application/json, text/plain, */*
+Sec-Ch-Ua-Platform-Version: "14.0.0"
+Persona-Version: 2023-08-08
+Sec-Ch-Ua-Full-Version-List: "Chromium";v="122.0.6261.120", "Not(A:Brand";v="24.0.0.0", "Samsung Internet";v="26.0.3.7"
+Sec-Ch-Ua-Model: "SM-A135F"
+Sec-Ch-Ua-Platform: "Android"
+Origin: https://verifications.withpersona.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://verifications.withpersona.com/verify?code=us1-ps53fnr&device-handoff-method=qr
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+
+{"data":{"attributes":{"one-time-link-code":"us1-ps53fnr"},"type":"inquiry-session"},"meta":{"device-handoff-method":"qr"}}
+
+
+GET /api/internal/verify/v1/inquiries/inq_vP8mzsRBMvneJY1UW2v6NkmVEnef?include=inquiry-template-version%2Corganization HTTP/2
+Host: verifications.withpersona.com
+Cookie: persona_device_id=dev_TfQYEMPkCn59qUTQywy9CQD7UPgg; _iidt=byfQJQ/0W1v9ssG0rC+nfgteIfQ7nUx9HvHXZQ4oKN7MYAU1KiS4RE6WP9II7BJ84/Gbx4Fc9TocZmSF1mwsZ+B0gk3AkG/FDA==; _vid_t=gdjbGlQftKJAjIDC09nPpBiLWH3ytUbUkQ7eGf/phvOw9eRc8dYXqSJNG5iGCDrYHtzFDns8Uf3rDMugr53Nb5qodkNpO6YKKw==; _persona_web_session=Ds8UkjR%2Bt7%2BLAudGjF8nfXkGoXzEJiWkjxT74n%2FGo%2F6d3RtT08osH9C89jQ8hfn3AAW8n6EFGGetZ9UclQMvTZ5U967g%2FK1GxE0vDdYB%2FLebqWC2DsG7M%2BqmUepm7KUCJMSIAAkiI40K0foX2%2Bj8NHkYjmE3sNnKX460BaG64%2FvQWN%2BksKzX%2BwRI7g8sSleTWgo2ZOajtE%2F7lCw5hv23ofQy17shr2DHMUR7Ega9D7xJ1aWNcTymcgnAceVF0u46dOkeeiLRcqkmkKQfRqwL5Gc%2FFTgVtsnoWUr3%2Fg%3D%3D--cmiCT0fYaSZn4ehD--BxO2wbEO2BJMdgNusF53ew%3D%3D; __cf_bm=jR40poeTLNxBKyc.zel9SR64Qm8cB0rmiBT0D.Bg1Wc-1726848051-1.0.1.1-DEa9tLTs2JhK.vbRYDOfg_8EIRPW5daDiJhtRWK7UyMmw1YAIAwvh0R7fdYMAWB9r2kuNS7Zo_SVFjPCN2Y9jw
+Sec-Ch-Ua: "Chromium";v="122", "Not(A:Brand";v="24", "Samsung Internet";v="26.0"
+Persona-Style-Variant: base
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpcXNlX3lGTFlZS0FCaFlzNUo3N0Yxak1mMnhXRUtXcGYiLCJhdWQiOiJwZXJzb25hLXZlcmlmeSIsImlzcyI6IndpdGhwZXJzb25hLmNvbSIsImlhdCI6MTcyNjg0ODA4OSwibmJmIjoxNzI2ODQ4MDg5LCJleHAiOjE3MjY5MzIyNTYsImp0aSI6IjZiN2I3Mjg3LTMyMWQtNDgwZi1iNDQyLTU4MTk2MjQ4MDg0ZCIsImlucXVpcnlfaWQiOiJpbnFfdlA4bXpzUkJNdm5lSlkxVVcydjZOa21WRW5lZiIsImVudmlyb25tZW50X2lkIjoiZW52X1VjOFU5TkdxU3N4aktqMTRzUUp3V2hFUSJ9.lteuN09bpYx-MKx5L4TiMnCxgBL9bVhEDlB83j791i4
+Sec-Ch-Ua-Platform-Version: "14.0.0"
+Persona-Version: 2023-08-08
+Sec-Ch-Ua-Full-Version-List: "Chromium";v="122.0.6261.120", "Not(A:Brand";v="24.0.0.0", "Samsung Internet";v="26.0.3.7"
+Sec-Ch-Ua-Model: "SM-A135F"
+Sec-Ch-Ua-Platform: "Android"
+Persona-Device-Locale: en-US
+Persona-Server-Sha: 13fb53b8b01
+Sec-Ch-Ua-Mobile: ?1
+User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Mobile Safari/537.36
+Sec-Ch-Ua-Full-Version: "122.0.6261.120"
+Requestparams: W10=
+Accept: application/json, text/plain, */*
+Stpbwsbb: 3ad8dab27614173ad0d5041cb443f37e64bacaf50ef37ba17e4d0bec860d1072
+Nhmjlnrs: 1726848090
+Persona-Country: US
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://verifications.withpersona.com/verify?code=us1-ps53fnr&device-handoff-method=qr
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+
+
+GET /api/internal/verify/v1/inquiries/inq_vP8mzsRBMvneJY1UW2v6NkmVEnef?include=inquiry-template-version%2Corganization HTTP/2
+Host: verifications.withpersona.com
+Cookie: persona_device_id=dev_TfQYEMPkCn59qUTQywy9CQD7UPgg; _iidt=byfQJQ/0W1v9ssG0rC+nfgteIfQ7nUx9HvHXZQ4oKN7MYAU1KiS4RE6WP9II7BJ84/Gbx4Fc9TocZmSF1mwsZ+B0gk3AkG/FDA==; _vid_t=gdjbGlQftKJAjIDC09nPpBiLWH3ytUbUkQ7eGf/phvOw9eRc8dYXqSJNG5iGCDrYHtzFDns8Uf3rDMugr53Nb5qodkNpO6YKKw==; _persona_web_session=rFx24os3MDomfogEXLkivXI%2FKhBHqBRsSdkPKjAslzP3CMoij66XG5rdwGu9wQl62iouPEL7Yzq4DsmJYNA9DKdXxBt35a2s%2FcYs2kXXaQ0shu3HdPO87FyspCtuo84bzWaj5Lyl%2BilUhjS9ODtf3HsoKH1FrZEnDSBxELKohP8M2fcUY2qZ00jwVMoWaa1AMmNhN7Ry3da1Q8KH0gBA3FfpCPtNJ83qF93jv7DAP7ezR0hGGtVOr9MYPM2TfnPfVVSlHddSw%2BLJnSEjk6RQx4ppSc%2FI4M%2BJ6BG%2B1Q%3D%3D--arpPejiCUeZiwqhS--ybdFEGk0odFIvv%2FB7lzq2A%3D%3D; __cf_bm=d66GstyAcfHlb6xCaS0T5T3YMF6OC1laaJ5QtcMhKVY-1726850419-1.0.1.1-uVIQ6Zj7P1szR0RGmCv1bq9nUzgSUAZOBzzu3V9X7h4b0mbs8aPAr_NSvJ9VDLw7XPVYz302vMgdKZsiqR2oKg
+Sec-Ch-Ua: "Chromium";v="122", "Not(A:Brand";v="24", "Samsung Internet";v="26.0"
+Persona-Style-Variant: base
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpcXNlX1R5MVc3TDRBRHk5U1c0MUJva0ZoWHN6eWlTVm8iLCJhdWQiOiJwZXJzb25hLXZlcmlmeSIsImlzcyI6IndpdGhwZXJzb25hLmNvbSIsImlhdCI6MTcyNjg1MDQ3MywibmJmIjoxNzI2ODUwNDczLCJleHAiOjE3MjY5MzIyNTYsImp0aSI6Ijc1MWJmNTYxLTIwYjEtNDg5ZS05NTU4LWY3YTE2MjE1ZDgzYyIsImlucXVpcnlfaWQiOiJpbnFfdlA4bXpzUkJNdm5lSlkxVVcydjZOa21WRW5lZiIsImVudmlyb25tZW50X2lkIjoiZW52X1VjOFU5TkdxU3N4aktqMTRzUUp3V2hFUSJ9.njdY-2Mj-lx-kdbDNUxS8XH4wCBZ7kd_sXsPmvaDaWg
+Sec-Ch-Ua-Platform-Version: "14.0.0"
+Persona-Version: 2023-08-08
+Sec-Ch-Ua-Full-Version-List: "Chromium";v="122.0.6261.120", "Not(A:Brand";v="24.0.0.0", "Samsung Internet";v="26.0.3.7"
+Sec-Ch-Ua-Model: "SM-A135F"
+Sec-Ch-Ua-Platform: "Android"
+Persona-Device-Locale: en-US
+Persona-Server-Sha: 13fb53b8b01
+Sec-Ch-Ua-Mobile: ?1
+User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Mobile Safari/537.36
+Sec-Ch-Ua-Full-Version: "122.0.6261.120"
+Requestparams: W10=
+Accept: application/json, text/plain, */*
+Stpbwsbb: d06397f3087a1e4f8566ded78e9f2830b3db384b858b0672c84bfc6cbc350ade
+Nhmjlnrs: 1726850474
+Persona-Country: US
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://verifications.withpersona.com/verify?code=us1-c16317z&device-handoff-method=qr
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+
+PATCH /api/internal/verify/v1/current-inquiry-session HTTP/2
+Host: verifications.withpersona.com
+Cookie: persona_device_id=dev_TfQYEMPkCn59qUTQywy9CQD7UPgg; _iidt=byfQJQ/0W1v9ssG0rC+nfgteIfQ7nUx9HvHXZQ4oKN7MYAU1KiS4RE6WP9II7BJ84/Gbx4Fc9TocZmSF1mwsZ+B0gk3AkG/FDA==; _vid_t=gdjbGlQftKJAjIDC09nPpBiLWH3ytUbUkQ7eGf/phvOw9eRc8dYXqSJNG5iGCDrYHtzFDns8Uf3rDMugr53Nb5qodkNpO6YKKw==; _persona_web_session=rFx24os3MDomfogEXLkivXI%2FKhBHqBRsSdkPKjAslzP3CMoij66XG5rdwGu9wQl62iouPEL7Yzq4DsmJYNA9DKdXxBt35a2s%2FcYs2kXXaQ0shu3HdPO87FyspCtuo84bzWaj5Lyl%2BilUhjS9ODtf3HsoKH1FrZEnDSBxELKohP8M2fcUY2qZ00jwVMoWaa1AMmNhN7Ry3da1Q8KH0gBA3FfpCPtNJ83qF93jv7DAP7ezR0hGGtVOr9MYPM2TfnPfVVSlHddSw%2BLJnSEjk6RQx4ppSc%2FI4M%2BJ6BG%2B1Q%3D%3D--arpPejiCUeZiwqhS--ybdFEGk0odFIvv%2FB7lzq2A%3D%3D; __cf_bm=d66GstyAcfHlb6xCaS0T5T3YMF6OC1laaJ5QtcMhKVY-1726850419-1.0.1.1-uVIQ6Zj7P1szR0RGmCv1bq9nUzgSUAZOBzzu3V9X7h4b0mbs8aPAr_NSvJ9VDLw7XPVYz302vMgdKZsiqR2oKg
+Content-Length: 248
+Sec-Ch-Ua: "Chromium";v="122", "Not(A:Brand";v="24", "Samsung Internet";v="26.0"
+Persona-Style-Variant: base
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpcXNlX1R5MVc3TDRBRHk5U1c0MUJva0ZoWHN6eWlTVm8iLCJhdWQiOiJwZXJzb25hLXZlcmlmeSIsImlzcyI6IndpdGhwZXJzb25hLmNvbSIsImlhdCI6MTcyNjg1MDQ3MywibmJmIjoxNzI2ODUwNDczLCJleHAiOjE3MjY5MzIyNTYsImp0aSI6Ijc1MWJmNTYxLTIwYjEtNDg5ZS05NTU4LWY3YTE2MjE1ZDgzYyIsImlucXVpcnlfaWQiOiJpbnFfdlA4bXpzUkJNdm5lSlkxVVcydjZOa21WRW5lZiIsImVudmlyb25tZW50X2lkIjoiZW52X1VjOFU5TkdxU3N4aktqMTRzUUp3V2hFUSJ9.njdY-2Mj-lx-kdbDNUxS8XH4wCBZ7kd_sXsPmvaDaWg
+Sec-Ch-Ua-Platform-Version: "14.0.0"
+Persona-Version: 2023-08-08
+Sec-Ch-Ua-Full-Version-List: "Chromium";v="122.0.6261.120", "Not(A:Brand";v="24.0.0.0", "Samsung Internet";v="26.0.3.7"
+Sec-Ch-Ua-Model: "SM-A135F"
+Sec-Ch-Ua-Platform: "Android"
+Persona-Device-Locale: en-US
+Persona-Server-Sha: 13fb53b8b01
+Sec-Ch-Ua-Mobile: ?1
+User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Mobile Safari/537.36
+Content-Type: application/json
+Requestparams: WyIwIiwiMCIsIjAiLCJob3N0ZWQiLCIwIiwiMCIsIjAiLCIwIiwiMCIsImN1cnJlbnQtaW5xdWlyeS1zZXNzaW9uIl0=
+Accept: application/json, text/plain, */*
+Nhmjlnrs: 1726850505
+Stpbwsbb: caba09ec866c6ced7f1bd57850c1b2a662dde611e9401643b1c14ecf581b949d
+Sec-Ch-Ua-Full-Version: "122.0.6261.120"
+Persona-Country: US
+Origin: https://verifications.withpersona.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://verifications.withpersona.com/verify?code=us1-c16317z&device-handoff-method=qr
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+
+{"data":{"type":"current-inquiry-session","attributes":{"distraction-events":0,"hesitation-baseline":0,"hesitation-count":0,"hesitation-time":0,"shortcut-copies":0,"shortcut-pastes":0,"autofill-cancels":0,"autofill-starts":0,"flow-type":"hosted"}}}
+
+
+
+
+
+
+POST /api/internal/verify/v1/current-inquiry-session/t HTTP/2
+Host: verifications.withpersona.com
+Cookie: persona_device_id=dev_TfQYEMPkCn59qUTQywy9CQD7UPgg; _iidt=byfQJQ/0W1v9ssG0rC+nfgteIfQ7nUx9HvHXZQ4oKN7MYAU1KiS4RE6WP9II7BJ84/Gbx4Fc9TocZmSF1mwsZ+B0gk3AkG/FDA==; _vid_t=gdjbGlQftKJAjIDC09nPpBiLWH3ytUbUkQ7eGf/phvOw9eRc8dYXqSJNG5iGCDrYHtzFDns8Uf3rDMugr53Nb5qodkNpO6YKKw==; _persona_web_session=Ds8UkjR%2Bt7%2BLAudGjF8nfXkGoXzEJiWkjxT74n%2FGo%2F6d3RtT08osH9C89jQ8hfn3AAW8n6EFGGetZ9UclQMvTZ5U967g%2FK1GxE0vDdYB%2FLebqWC2DsG7M%2BqmUepm7KUCJMSIAAkiI40K0foX2%2Bj8NHkYjmE3sNnKX460BaG64%2FvQWN%2BksKzX%2BwRI7g8sSleTWgo2ZOajtE%2F7lCw5hv23ofQy17shr2DHMUR7Ega9D7xJ1aWNcTymcgnAceVF0u46dOkeeiLRcqkmkKQfRqwL5Gc%2FFTgVtsnoWUr3%2Fg%3D%3D--cmiCT0fYaSZn4ehD--BxO2wbEO2BJMdgNusF53ew%3D%3D; __cf_bm=jR40poeTLNxBKyc.zel9SR64Qm8cB0rmiBT0D.Bg1Wc-1726848051-1.0.1.1-DEa9tLTs2JhK.vbRYDOfg_8EIRPW5daDiJhtRWK7UyMmw1YAIAwvh0R7fdYMAWB9r2kuNS7Zo_SVFjPCN2Y9jw
+Content-Length: 292
+Sec-Ch-Ua: "Chromium";v="122", "Not(A:Brand";v="24", "Samsung Internet";v="26.0"
+Persona-Style-Variant: base
+Persona-Organization-Id: org_j7H1Cgzh3Ppx7LvMXXy79PrV
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpcXNlX3lGTFlZS0FCaFlzNUo3N0Yxak1mMnhXRUtXcGYiLCJhdWQiOiJwZXJzb25hLXZlcmlmeSIsImlzcyI6IndpdGhwZXJzb25hLmNvbSIsImlhdCI6MTcyNjg0ODA4OSwibmJmIjoxNzI2ODQ4MDg5LCJleHAiOjE3MjY5MzIyNTYsImp0aSI6IjZiN2I3Mjg3LTMyMWQtNDgwZi1iNDQyLTU4MTk2MjQ4MDg0ZCIsImlucXVpcnlfaWQiOiJpbnFfdlA4bXpzUkJNdm5lSlkxVVcydjZOa21WRW5lZiIsImVudmlyb25tZW50X2lkIjoiZW52X1VjOFU5TkdxU3N4aktqMTRzUUp3V2hFUSJ9.lteuN09bpYx-MKx5L4TiMnCxgBL9bVhEDlB83j791i4
+Sec-Ch-Ua-Platform-Version: "14.0.0"
+Persona-Version: 2023-08-08
+Persona-Device-Id: dev_TfQYEMPkCn59qUTQywy9CQD7UPgg
+Sec-Ch-Ua-Full-Version-List: "Chromium";v="122.0.6261.120", "Not(A:Brand";v="24.0.0.0", "Samsung Internet";v="26.0.3.7"
+Sec-Ch-Ua-Model: "SM-A135F"
+Sec-Ch-Ua-Platform: "Android"
+Persona-Device-Locale: en-US
+Persona-Server-Sha: 13fb53b8b01
+Sec-Ch-Ua-Mobile: ?1
+User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Mobile Safari/537.36
+Persona-Inquiry-Template-Id: itmplv_EVMgJuBvdQULjYwV8YUpdt6rhCpA
+Content-Type: application/json
+Accept: application/json, text/plain, */*
+Nhmjlnrs: 1726848105
+Stpbwsbb: 5ea3178d5989e2b14e9b6c21f9d43845d511545351a93456be631b0b8c6f3622
+Sec-Ch-Ua-Full-Version: "122.0.6261.120"
+Requestparams: WyJLTUhSbkMrbjRjSldNaXh0K2ZEZDRiSlVtZE9OVHgvckptUEh4STFyZHpKb2E4bkFhUW9rb3NidkhUTVlTWkJNOTFIWlR3NVN4QytkS1FxQXBaQ1F6cTdhMmV3ZmdaSmRUazVLZmtNaXVkdTRFNEozblJqOE44Z1ZsL0pYQ3RTZXk3K2pQa2Noby9SaUtBNTVzM0dndUlHWStSTVQ1LzVNS0R3OXVkMDJIWDk1TVFYVDFrbUgrSk16Z1NqWHlTWVNRRyszWnowOWp1ZkZaRCtWL09FNU9uQjBRYWR0RGM3M3ljM1N5QS9pNXNGOGpvWTZxUWNnN1FQUmhmQjh0QTFyaDhFPSJd
+Persona-Country: US
+Origin: https://verifications.withpersona.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://verifications.withpersona.com/verify?code=us1-ps53fnr&device-handoff-method=qr
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+
+{"data":{"attributes":{"e":"KMHRnC+n4cJWMixt+fDd4bJUmdONTx/rJmPHxI1rdzJoa8nAaQokosbvHTMYSZBM91HZTw5SxC+dKQqApZCQzq7a2ewfgZJdTk5KfkMiudu4E4J3nRj8N8gVl/JXCtSey7+jPkcho/RiKA55s3GguIGY+RMT5/5MKDw9ud02HX95MQXT1kmH+JMzgSjXySYSQG+3Zz09jufFZD+V/OE5OnB0QadtDc73yc3SyA/i5sF8joY6qQcg7QPRhfB8tA1rh8E="}}}
+
+
+PATCH /api/internal/verify/v1/current-inquiry-session HTTP/2
+Host: verifications.withpersona.com
+Cookie: persona_device_id=dev_TfQYEMPkCn59qUTQywy9CQD7UPgg; _iidt=byfQJQ/0W1v9ssG0rC+nfgteIfQ7nUx9HvHXZQ4oKN7MYAU1KiS4RE6WP9II7BJ84/Gbx4Fc9TocZmSF1mwsZ+B0gk3AkG/FDA==; _vid_t=gdjbGlQftKJAjIDC09nPpBiLWH3ytUbUkQ7eGf/phvOw9eRc8dYXqSJNG5iGCDrYHtzFDns8Uf3rDMugr53Nb5qodkNpO6YKKw==; _persona_web_session=Ds8UkjR%2Bt7%2BLAudGjF8nfXkGoXzEJiWkjxT74n%2FGo%2F6d3RtT08osH9C89jQ8hfn3AAW8n6EFGGetZ9UclQMvTZ5U967g%2FK1GxE0vDdYB%2FLebqWC2DsG7M%2BqmUepm7KUCJMSIAAkiI40K0foX2%2Bj8NHkYjmE3sNnKX460BaG64%2FvQWN%2BksKzX%2BwRI7g8sSleTWgo2ZOajtE%2F7lCw5hv23ofQy17shr2DHMUR7Ega9D7xJ1aWNcTymcgnAceVF0u46dOkeeiLRcqkmkKQfRqwL5Gc%2FFTgVtsnoWUr3%2Fg%3D%3D--cmiCT0fYaSZn4ehD--BxO2wbEO2BJMdgNusF53ew%3D%3D; __cf_bm=jR40poeTLNxBKyc.zel9SR64Qm8cB0rmiBT0D.Bg1Wc-1726848051-1.0.1.1-DEa9tLTs2JhK.vbRYDOfg_8EIRPW5daDiJhtRWK7UyMmw1YAIAwvh0R7fdYMAWB9r2kuNS7Zo_SVFjPCN2Y9jw
+Content-Length: 250
+Sec-Ch-Ua: "Chromium";v="122", "Not(A:Brand";v="24", "Samsung Internet";v="26.0"
+Persona-Style-Variant: base
+Persona-Organization-Id: org_j7H1Cgzh3Ppx7LvMXXy79PrV
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJpcXNlX3lGTFlZS0FCaFlzNUo3N0Yxak1mMnhXRUtXcGYiLCJhdWQiOiJwZXJzb25hLXZlcmlmeSIsImlzcyI6IndpdGhwZXJzb25hLmNvbSIsImlhdCI6MTcyNjg0ODA4OSwibmJmIjoxNzI2ODQ4MDg5LCJleHAiOjE3MjY5MzIyNTYsImp0aSI6IjZiN2I3Mjg3LTMyMWQtNDgwZi1iNDQyLTU4MTk2MjQ4MDg0ZCIsImlucXVpcnlfaWQiOiJpbnFfdlA4bXpzUkJNdm5lSlkxVVcydjZOa21WRW5lZiIsImVudmlyb25tZW50X2lkIjoiZW52X1VjOFU5TkdxU3N4aktqMTRzUUp3V2hFUSJ9.lteuN09bpYx-MKx5L4TiMnCxgBL9bVhEDlB83j791i4
+Sec-Ch-Ua-Platform-Version: "14.0.0"
+Persona-Version: 2023-08-08
+Persona-Device-Id: dev_TfQYEMPkCn59qUTQywy9CQD7UPgg
+Sec-Ch-Ua-Full-Version-List: "Chromium";v="122.0.6261.120", "Not(A:Brand";v="24.0.0.0", "Samsung Internet";v="26.0.3.7"
+Sec-Ch-Ua-Model: "SM-A135F"
+Sec-Ch-Ua-Platform: "Android"
+Persona-Device-Locale: en-US
+Persona-Server-Sha: 13fb53b8b01
+Sec-Ch-Ua-Mobile: ?1
+User-Agent: Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/26.0 Chrome/122.0.0.0 Mobile Safari/537.36
+Persona-Inquiry-Template-Id: itmplv_EVMgJuBvdQULjYwV8YUpdt6rhCpA
+Content-Type: application/json
+Accept: application/json, text/plain, */*
+Nhmjlnrs: 1726848108
+Stpbwsbb: b71dcb611863c5a52848a550ca9387e8aa040fdcf840afbb28511833ed9f15ed
+Sec-Ch-Ua-Full-Version: "122.0.6261.120"
+Requestparams: WyIwIiwiMCIsIjAiLCJob3N0ZWQiLCIyNzUiLCIwIiwiMCIsIjAiLCIwIiwiY3VycmVudC1pbnF1aXJ5LXNlc3Npb24iXQ==
+Persona-Country: US
+Origin: https://verifications.withpersona.com
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://verifications.withpersona.com/verify?code=us1-ps53fnr&device-handoff-method=qr
+Accept-Encoding: gzip, deflate, br
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8
+
+{"data":{"type":"current-inquiry-session","attributes":{"distraction-events":0,"hesitation-baseline":275,"hesitation-count":0,"hesitation-time":0,"shortcut-copies":0,"shortcut-pastes":0,"autofill-cancels":0,"autofill-starts":0,"flow-type":"hosted"}}}
+
+
+
